@@ -1,0 +1,45 @@
+18. Full Tool Specifications  
+Tools are defined with purpose, inputs, outputs, and integration points.
+
+---
+
+## 🧩 18.1 Property Normalizer  
+- **Purpose:** Normalize property records  
+- **Inputs:** raw property records  
+- **Outputs:** normalized property records  
+- **Integration:** record collection engine  
+
+---
+
+## 🧩 18.2 Utility Normalizer  
+- **Purpose:** Normalize utility records  
+- **Inputs:** raw utility records  
+- **Outputs:** normalized utility records  
+
+---
+
+## 🧩 18.3 Communications Normalizer  
+- **Purpose:** Normalize communications billing  
+- **Inputs:** raw billing records  
+- **Outputs:** normalized billing records  
+
+---
+
+## 🧩 18.4 Reconciliation Tool  
+- **Purpose:** Resolve mismatches  
+- **Inputs:** conflicting records  
+- **Outputs:** reconciled records  
+
+---
+
+## 🧩 18.5 Provenance Updater  
+- **Purpose:** Update provenance metadata  
+- **Inputs:** records  
+- **Outputs:** updated provenance  
+
+---
+
+## 🧩 18.6 Continuity Validator  
+- **Purpose:** Validate lifecycle continuity  
+- **Inputs:** continuity markers  
+- **Outputs:** continuity validation results
