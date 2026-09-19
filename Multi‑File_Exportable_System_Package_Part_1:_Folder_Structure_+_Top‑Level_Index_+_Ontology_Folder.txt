@@ -1,0 +1,262 @@
+Wave 2 — Multi‑File Exportable System Package  
+### *Part 1: Folder Structure + Top‑Level Index + Ontology Folder*
+
+Below is the full package structure:
+
+```
+/export_bundle
+    /spec_document
+        system_spec.md
+    /package
+        /ontology
+            ontology.md
+            identity.md
+            record.md
+            domain.md
+            anomaly.md
+            task.md
+            procedure.md
+            tool.md
+            goal.md
+        /engines
+        /dags
+        /prompts
+        /procedures
+        /processes
+        /schemas
+        /tools
+        /goals
+        /tasks
+        /consistency
+        /feedback
+        /optimization
+    /blueprint
+    /auxiliary
+```
+
+This message delivers the **ontology folder** in full.
+
+---
+
+# 🗂️ **Package Index (Top‑Level)**  
+Each item is a Guided Link you can expand:
+
+- **Ontology**  
+- **Engines**  
+- **DAGs**  
+- **Prompt Libraries**  
+- **Procedures**  
+- **Processes**  
+- **Schemas**  
+- **Tools**  
+- **Goals**  
+- **Tasks**  
+- **Consistency**  
+- **Feedback**  
+- **Optimization**  
+
+---
+
+# 🧩 **Ontology Folder**  
+This folder contains the conceptual backbone of the entire system.
+
+Below are the contents of each file.
+
+---
+
+## 📄 **ontology.md**  
+### Unified Identity‑Integrity Ontology  
+Defines all conceptual classes and relationships.
+
+```
+Ontology Version: 1.0
+
+Top-Level Classes:
+- Identity
+- Record
+- Domain
+- Anomaly
+- Task
+- Procedure
+- Tool
+- Goal
+
+Relationships:
+- Identity → Record (hasRecord)
+- Identity → Anomaly (hasAnomaly)
+- Record → Provenance (hasProvenance)
+- Domain → Record (producesRecord)
+- Goal → Task (requiresTask)
+- Task → Procedure (implementedBy)
+- Procedure → Tool (requiresTool)
+```
+
+---
+
+## 📄 **identity.md**  
+### Identity Class Specification
+
+```
+Class: Identity
+Attributes:
+- identityId: string
+- identityType: string
+- attributes: object
+- records: Record[]
+- anomalies: Anomaly[]
+- continuityMarkers: string[]
+
+Relationships:
+- hasRecord
+- hasAnomaly
+- participatesInDomain
+- hasGoal
+```
+
+---
+
+## 📄 **record.md**  
+### Record Class Specification
+
+```
+Class: Record
+Attributes:
+- recordId: string
+- domain: string
+- recordType: string
+- attributes: object
+- provenance: Provenance
+- timestamp: string
+- confidenceScore: number
+
+Relationships:
+- belongsToDomain
+- attachedToIdentity
+```
+
+---
+
+## 📄 **domain.md**  
+### Domain Class Specification
+
+```
+Class: Domain
+Attributes:
+- domainId: string
+- schema: object
+- rules: object
+- expectedRecordPatterns: object
+
+Domain Types:
+- Property
+- Utilities
+- Communications
+- Vehicles
+- Education
+- Employment
+- Corporate
+- Travel
+- Licensing
+```
+
+---
+
+## 📄 **anomaly.md**  
+### Anomaly Class Specification
+
+```
+Class: Anomaly
+Attributes:
+- anomalyId: string
+- anomalyType: string
+- severity: number
+- attributes: object
+- relatedRecords: string[]
+- relatedDomains: string[]
+
+Types:
+- Inconsistency
+- Completeness
+- ExpectedRecord
+- SyntheticIdentity
+- EmergentIdentity
+- SpatiotemporalCluster
+```
+
+---
+
+## 📄 **task.md**  
+### Task Class Specification
+
+```
+Class: Task
+Attributes:
+- taskId: string
+- description: string
+- domain: string
+- inputs: string[]
+- outputs: string[]
+- validation: string
+- dependencies: string[]
+```
+
+---
+
+## 📄 **procedure.md**  
+### Procedure Class Specification
+
+```
+Class: Procedure
+Attributes:
+- procedureId: string
+- steps: string[]
+- preconditions: string[]
+- postconditions: string[]
+- errorHandling: string[]
+- requiredTools: string[]
+```
+
+---
+
+## 📄 **tool.md**  
+### Tool Class Specification
+
+```
+Class: Tool
+Attributes:
+- toolId: string
+- purpose: string
+- inputs: string[]
+- outputs: string[]
+- integrationPoints: string[]
+- domain: string
+```
+
+---
+
+## 📄 **goal.md**  
+### Goal Class Specification
+
+```
+Class: Goal
+Attributes:
+- goalId: string
+- description: string
+- goalType: string
+- tasks: string[]
+- subGoals: string[]
+- priority: number
+```
+ 
+Next, in **Wave 2, Part 2** -the **entire /engines folder**, including:
+
+- Expected‑Record Engine  
+- Anomaly Engine  
+- Provenance Engine  
+- Continuity Engine  
+- Record Collection Engine  
+- List Determination Engine  
+- Goal‑to‑Execution Compiler  
+- Consistency Engine  
+- Feedback Loop  
+- Optimization Layer  
