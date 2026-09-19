@@ -1,0 +1,41 @@
+16. Full Procedures
+All procedures are grouped into six categories.
+
+---
+
+## 🧩 16.1 Domain Procedures  
+- Property normalization  
+- Vehicle registration verification  
+- Utility account validation  
+
+---
+
+## 🧩 16.2 Cross‑Domain Procedures  
+- Residence consistency  
+- Employment verification  
+- Vehicle ownership consistency  
+
+---
+
+## 🧩 16.3 Continuity Procedures  
+- Monthly continuity audit  
+- Renewal cycle validation  
+
+---
+
+## 🧩 16.4 Provenance Procedures  
+- Provenance chain refresh  
+- Multi‑source provenance merge  
+
+---
+
+## 🧩 16.5 Reconciliation Procedures  
+- Attribute alignment  
+- Timestamp reconciliation  
+
+---
+
+## 🧩 16.6 Maintenance Procedures  
+- Graph hygiene  
+- Plugin refresh  
+- Domain schema validation  
