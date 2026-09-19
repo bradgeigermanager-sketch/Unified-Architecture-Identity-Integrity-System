@@ -1,0 +1,67 @@
+15. Full Prompt Libraries 
+This section contains the complete prompt libraries for all system functions.
+
+---
+
+## 🧩 15.1 Expected‑Record Prompts  
+- Expected record determination  
+- Expected record classification  
+- Expected record explanation  
+
+---
+
+## 🧩 15.2 Required‑Record Prompts  
+- Required record determination  
+- Required record validation  
+
+---
+
+## 🧩 15.3 Missing‑Record Prompts  
+- Missing record identification  
+- Missing record explanation  
+
+---
+
+## 🧩 15.4 Continuity Prompts  
+- Continuity marker determination  
+- Continuity gap identification  
+
+---
+
+## 🧩 15.5 Domain Prompts  
+- Domain record extraction  
+- Domain record validation  
+
+---
+
+## 🧩 15.6 Cross‑Domain Prompts  
+- Cross‑domain record identification  
+- Cross‑domain alignment  
+
+---
+
+## 🧩 15.7 Provenance Prompts  
+- Provenance completeness check  
+- Provenance integrity classification  
+
+---
+
+## 🧩 15.8 Reconciliation Prompts  
+- Reconciliation candidate identification  
+- Reconciliation priority classification  
+
+---
+
+## 🧩 15.9 Goal & Task Prompts  
+- Goal interpretation  
+- Sub‑goal generation  
+- Task generation  
+- Procedure construction  
+- Tool specification  
+
+---
+
+## 🧩 15.10 Anomaly Prompts  
+- Anomaly explanation  
+- Anomaly classification  
+- Severity scoring  
