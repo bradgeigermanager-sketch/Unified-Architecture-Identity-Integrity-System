@@ -1,0 +1,136 @@
+11. Full Ontology Definitions
+The ontology is the backbone of the entire system. Below are the **complete definitions** for each class, including attributes, relationships, and constraints.
+
+---
+
+## 🧩 11.1 Identity  
+Represents a person or entity whose records are being analyzed.
+
+### Attributes  
+- **identityId** — unique identifier  
+- **identityType** — person, organization, synthetic candidate, emergent identity  
+- **attributes** — demographic, behavioral, lifecycle metadata  
+- **records** — list of Record objects  
+- **anomalies** — list of Anomaly objects  
+- **continuityMarkers** — lifecycle markers (renewals, filings, updates)  
+
+### Relationships  
+- Identity → Record (`hasRecord`)  
+- Identity → Anomaly (`hasAnomaly`)  
+- Identity → Domain (`participatesInDomain`)  
+- Identity → Goal (`hasGoal`)  
+
+---
+
+## 🧩 11.2 Record  
+Represents a domain‑specific data object.
+
+### Attributes  
+- **recordId**  
+- **domain**  
+- **recordType**  
+- **attributes**  
+- **provenance**  
+- **timestamp**  
+- **confidenceScore**  
+
+### Relationships  
+- Record → Provenance (`hasProvenance`)  
+- Record → Domain (`belongsToDomain`)  
+- Record → Identity (`attachedToIdentity`)  
+
+---
+
+## 🧩 11.3 Domain  
+Represents a data‑producing area.
+
+### Domain Types  
+- Property  
+- Utilities  
+- Communications  
+- Vehicles  
+- Education  
+- Employment  
+- Corporate  
+- Travel  
+- Licensing  
+
+### Attributes  
+- **domainId**  
+- **schema**  
+- **rules**  
+- **expectedRecordPatterns**  
+
+---
+
+## 🧩 11.4 Anomaly  
+Represents deviations from expected identity behavior.
+
+### Types  
+- Inconsistency  
+- Completeness  
+- Expected‑Record  
+- Synthetic Identity  
+- Emergent Identity  
+- Spatiotemporal Cluster  
+
+### Attributes  
+- **anomalyId**  
+- **anomalyType**  
+- **severity**  
+- **attributes**  
+- **relatedRecords**  
+- **relatedDomains**  
+
+---
+
+## 🧩 11.5 Task  
+Atomic unit of work.
+
+### Attributes  
+- **taskId**  
+- **description**  
+- **domain**  
+- **inputs**  
+- **outputs**  
+- **validation**  
+- **dependencies**  
+
+---
+
+## 🧩 11.6 Procedure  
+Ordered sequence of tasks.
+
+### Attributes  
+- **procedureId**  
+- **steps**  
+- **preconditions**  
+- **postconditions**  
+- **errorHandling**  
+- **requiredTools**  
+
+---
+
+## 🧩 11.7 Tool  
+Functional component used to execute tasks.
+
+### Attributes  
+- **toolId**  
+- **purpose**  
+- **inputs**  
+- **outputs**  
+- **integrationPoints**  
+- **domain**  
+
+---
+
+## 🧩 11.8 Goal  
+High‑level intent.
+
+### Attributes  
+- **goalId**  
+- **description**  
+- **goalType**  
+- **tasks**  
+- **subGoals**  
+- **priority**
