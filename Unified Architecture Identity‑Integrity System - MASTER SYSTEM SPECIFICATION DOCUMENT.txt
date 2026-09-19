@@ -1,0 +1,364 @@
+# **MASTER SYSTEM SPECIFICATION DOCUMENT**  
+### *Identity‑Integrity System — Unified Architecture Specification*  
+### *Cross‑Format Export Bundle — Wave 1*
+
+---
+
+## **1. System Overview**  
+The Identity‑Integrity System is a modular, schema‑driven, DAG‑orchestrated architecture designed to:
+
+- Collect identity‑related records across domains  
+- Infer expected records  
+- Detect anomalies  
+- Maintain provenance  
+- Ensure continuity  
+- Reconcile inconsistencies  
+- Generate goals  
+- Decompose goals into tasks, procedures, and tools  
+- Execute tasks  
+- Validate results  
+- Feed execution outcomes back into the system  
+- Optimize tools and workflows over time  
+
+It is built on a unified ontology, multiple engines, procedural layers, and a full orchestration DAG.
+
+---
+
+## **2. Unified Ontology**  
+The ontology defines all conceptual objects in the system.
+
+### **2.1 Top‑Level Classes**
+- **Identity**  
+- **Record**  
+- **Domain**  
+- **Anomaly**  
+- **Task**  
+- **Procedure**  
+- **Tool**  
+- **Goal**
+
+### **2.2 Identity**
+Represents a person or entity.
+
+Attributes include:
+- identityId  
+- identityType  
+- attributes  
+- records  
+- anomalies  
+
+### **2.3 Record**
+Represents domain‑specific data.
+
+Attributes include:
+- recordId  
+- domain  
+- recordType  
+- attributes  
+- provenance  
+
+### **2.4 Domain**
+Represents a data‑producing area.
+
+Domains include:
+- Property  
+- Utilities  
+- Communications  
+- Vehicles  
+- Education  
+- Employment  
+- Corporate  
+- Travel  
+- Licensing  
+
+### **2.5 Anomaly**
+Represents deviations from expected identity behavior.
+
+Types include:
+- Inconsistency  
+- Completeness  
+- Expected‑Record  
+- Synthetic Identity  
+- Emergent Identity  
+- Spatiotemporal Cluster  
+
+### **2.6 Task**
+Atomic unit of work.
+
+Attributes:
+- taskId  
+- description  
+- domain  
+- inputs  
+- outputs  
+- validation  
+
+### **2.7 Procedure**
+Ordered sequence of tasks.
+
+Attributes:
+- procedureId  
+- steps  
+- preconditions  
+- postconditions  
+- errorHandling  
+
+### **2.8 Tool**
+Functional component used to execute tasks.
+
+Attributes:
+- toolId  
+- purpose  
+- inputs  
+- outputs  
+- integrationPoints  
+
+### **2.9 Goal**
+High‑level intent.
+
+Attributes:
+- goalId  
+- description  
+- goalType  
+- tasks  
+
+---
+
+## **3. Engines**  
+The system includes multiple engines that operate on the ontology.
+
+### **3.1 Expected‑Record Inference Engine**
+Determines which records *should* exist.
+
+Inputs:
+- identity attributes  
+- domain correlations  
+- population norms  
+
+Outputs:
+- expected records  
+- missing expected records  
+
+### **3.2 Anomaly Engine**
+Detects anomalies using feature models.
+
+Inputs:
+- records  
+- expected records  
+- identity graph  
+
+Outputs:
+- anomaly objects  
+
+### **3.3 Provenance Engine**
+Maintains record lineage.
+
+Functions:
+- provenance refresh  
+- multi‑source merge  
+- reliability scoring  
+
+### **3.4 Continuity Engine**
+Maintains lifecycle continuity.
+
+Functions:
+- renewal validation  
+- periodic filings  
+- continuity markers  
+
+### **3.5 Record Collection Engine**
+Collects records across domains.
+
+Functions:
+- domain collectors  
+- normalization  
+- validation  
+- provenance attachment  
+
+### **3.6 List Determination Engine**
+Determines which records belong on any list.
+
+List types:
+- expected  
+- required  
+- missing  
+- continuity  
+- domain  
+- cross‑domain  
+- provenance  
+- reconciliation  
+
+### **3.7 Goal‑to‑Execution Compiler**
+Transforms goals into execution plans.
+
+Pipeline:
+- interpret goal  
+- generate sub‑goals  
+- generate tasks  
+- build procedures  
+- generate tool specs  
+
+### **3.8 Cross‑Layer Consistency Engine**
+Ensures coherence across all layers.
+
+Layers:
+- identity graph  
+- records  
+- expected records  
+- anomalies  
+- LLM reasoning  
+- tasks/procedures/tools  
+- execution results  
+
+### **3.9 Execution Feedback Loop**
+Feeds execution results back into the system.
+
+Effects:
+- goal updates  
+- procedure updates  
+- tool updates  
+- model updates  
+- new tasks  
+
+### **3.10 Toolchain Optimization Layer**
+Optimizes tool usage.
+
+Functions:
+- merge redundant tools  
+- identify missing tools  
+- detect inefficiencies  
+- propose generalizations  
+
+---
+
+## **4. DAGs**  
+The system uses DAGs to orchestrate workflows.
+
+### **4.1 Task Orchestration DAG**
+Nodes:
+- goal_interpretation  
+- subgoal_generation  
+- task_generation  
+- procedure_build  
+- tool_spec_generation  
+- task_scheduler  
+- task_executor  
+- task_verifier  
+- task_logger  
+
+Edges define deterministic flow.
+
+### **4.2 Record Collection DAG**
+Nodes:
+- domain_collectors  
+- record_normalizer  
+- record_validator  
+- provenance_attacher  
+- record_assembler  
+
+### **4.3 List Determination DAG**
+Nodes:
+- list_rules_loader  
+- record_classifier  
+- list_builder  
+- follow_up_task_generator  
+
+### **4.4 Consistency DAG**
+Nodes:
+- snapshot_collector  
+- layer_validators  
+- report_aggregator  
+- correction_generator  
+
+### **4.5 Feedback Loop DAG**
+Nodes:
+- feedback_collector  
+- feedback_analyzer  
+- update_generator  
+- update_applier  
+
+---
+
+## **5. Prompt Libraries**  
+The system includes prompt libraries for:
+
+- anomaly explanation  
+- expected‑record inference  
+- record retrieval  
+- provenance maintenance  
+- continuity  
+- task execution  
+- goal definition  
+- goal decomposition  
+- tool construction  
+- list determination  
+
+Each library contains deterministic, schema‑aligned prompts.
+
+---
+
+## **6. Procedures & Processes**  
+Procedures are grouped into categories:
+
+### **6.1 Domain Procedures**
+- property normalization  
+- vehicle verification  
+- utility validation  
+
+### **6.2 Cross‑Domain Procedures**
+- residence consistency  
+- employment verification  
+- vehicle ownership consistency  
+
+### **6.3 Continuity Procedures**
+- monthly continuity audit  
+- renewal cycle validation  
+
+### **6.4 Provenance Procedures**
+- provenance chain refresh  
+- multi‑source merge  
+
+### **6.5 Reconciliation Procedures**
+- attribute alignment  
+- timestamp reconciliation  
+
+### **6.6 Maintenance Procedures**
+- graph hygiene  
+- plugin refresh  
+- domain schema validation  
+
+Each procedure has a full process definition.
+
+---
+
+## **7. Schemas**  
+The system includes:
+
+- JSON schemas  
+- SQL schemas  
+- GraphQL schemas  
+
+These define identities, records, anomalies, tasks, procedures, tools, goals.
+
+---
+
+## **8. Tools**  
+Tools include:
+
+- domain normalizers  
+- reconciliation tools  
+- provenance tools  
+- continuity tools  
+- generalized tools  
+
+Each tool has a spec with inputs, outputs, and integration points.
+
+---
+
+## **9. Goals & Tasks**  
+Goals are decomposed into tasks, procedures, and tools using the compiler.
+
+---
+
+## **10. Consistency & Feedback**  
+The system is self‑correcting and adaptive.
