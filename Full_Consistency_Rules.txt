@@ -1,0 +1,66 @@
+20. Full Consistency Rules
+The consistency engine enforces coherence across all layers.
+
+---
+
+## 🧩 20.1 Identity Graph Consistency  
+Rules ensure:
+
+- every record is attached to a valid identity  
+- every anomaly references valid records  
+- every continuity marker matches lifecycle stage  
+
+---
+
+## 🧩 20.2 Record Consistency  
+Rules ensure:
+
+- domain schema compliance  
+- valid provenance  
+- valid timestamps  
+- valid attribute formats  
+
+---
+
+## 🧩 20.3 Expected‑Record Consistency  
+Rules ensure:
+
+- expected records match identity attributes  
+- missing expected records are flagged  
+- expected records align with domain rules  
+
+---
+
+## 🧩 20.4 Anomaly Consistency  
+Rules ensure:
+
+- anomaly type matches feature patterns  
+- severity matches risk model  
+- anomalies reference valid domains  
+
+---
+
+## 🧩 20.5 LLM Output Consistency  
+Rules ensure:
+
+- LLM outputs match ontology schemas  
+- LLM outputs match identity graph facts  
+- LLM outputs match domain rules  
+
+---
+
+## 🧩 20.6 Task/Procedure/Tool Consistency  
+Rules ensure:
+
+- tasks support goals  
+- procedures cover tasks  
+- tools support procedures  
+
+---
+
+## 🧩 20.7 Execution Consistency  
+Rules ensure:
+
+- execution results match procedure postconditions  
+- graph updates match execution results  
+- provenance updates match record lineage  
