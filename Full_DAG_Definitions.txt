@@ -1,0 +1,97 @@
+14. Full DAG Definitions
+Your system uses multiple DAGs to orchestrate workflows.  
+Each DAG is defined with nodes, edges, and execution semantics.
+
+---
+
+## 🧩 14.1 Task Orchestration DAG  
+This DAG transforms goals → tasks → procedures → execution → verification → logging.
+
+### Nodes  
+- **Goal Interpretation**  
+- **Sub‑Goal Generation**  
+- **Task Generation**  
+- **Procedure Build**  
+- **Tool Spec Generation**  
+- **Task Scheduler**  
+- **Task Executor**  
+- **Task Verifier**  
+- **Task Logger**  
+
+### Edges  
+- goal_interpretation → subgoal_generation  
+- subgoal_generation → task_generation  
+- task_generation → procedure_build  
+- procedure_build → tool_spec_generation  
+- task_generation → task_scheduler  
+- procedure_build → task_scheduler  
+- task_scheduler → task_executor  
+- tool_spec_generation → task_executor  
+- task_executor → task_verifier  
+- task_verifier → task_logger  
+
+---
+
+## 🧩 14.2 Record Collection DAG  
+Collects, normalizes, validates, and assembles records.
+
+### Nodes  
+- **DomainCollectors**  
+- **RecordNormalizer**  
+- **RecordValidator**  
+- **ProvenanceAttacher**  
+- **RecordAssembler**
+
+### Edges  
+- DomainCollectors → RecordNormalizer  
+- RecordNormalizer → RecordValidator  
+- RecordValidator → ProvenanceAttacher  
+- ProvenanceAttacher → RecordAssembler  
+
+---
+
+## 🧩 14.3 List Determination DAG  
+Determines expected, required, missing, continuity, domain, cross‑domain, provenance, and reconciliation lists.
+
+### Nodes  
+- **ListRulesLoader**  
+- **RecordClassifier**  
+- **ListBuilder**  
+- **FollowUpTaskGenerator**
+
+### Edges  
+- ListRulesLoader → RecordClassifier  
+- RecordClassifier → ListBuilder  
+- ListBuilder → FollowUpTaskGenerator  
+
+---
+
+## 🧩 14.4 Consistency DAG  
+Ensures coherence across layers.
+
+### Nodes  
+- **SnapshotCollector**  
+- **LayerValidators**  
+- **ReportAggregator**  
+- **CorrectionGenerator**
+
+### Edges  
+- SnapshotCollector → LayerValidators  
+- LayerValidators → ReportAggregator  
+- ReportAggregator → CorrectionGenerator  
+
+---
+
+## 🧩 14.5 Feedback Loop DAG  
+Feeds execution results back into the system.
+
+### Nodes  
+- **FeedbackCollector**  
+- **FeedbackAnalyzer**  
+- **UpdateGenerator**  
+- **UpdateApplier**
+
+### Edges  
+- FeedbackCollector → FeedbackAnalyzer  
+- FeedbackAnalyzer → UpdateGenerator  
+- UpdateGenerator → UpdateApplier
