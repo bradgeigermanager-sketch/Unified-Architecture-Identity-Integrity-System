@@ -1,0 +1,80 @@
+19. Full Compiler Definitions  
+Your system includes four compilers:
+
+- Goal‑to‑Execution Compiler  
+- Procedure Compiler  
+- Tool Specification Compiler  
+- Task Compiler  
+
+Each compiler transforms one ontology object into another in a deterministic pipeline.
+
+---
+
+## 🧩 19.1 Goal‑to‑Execution Compiler  
+Transforms **goals → sub‑goals → tasks → procedures → tools → execution plan**.
+
+### Pipeline  
+1. **GoalInterpreter**  
+2. **SubGoalGenerator**  
+3. **TaskGenerator**  
+4. **ProcedureBuilder**  
+5. **ToolSpecGenerator**  
+6. **ExecutionPlanAssembler**
+
+### Inputs  
+- goal  
+- ontology  
+- domain rules  
+- identity attributes  
+
+### Outputs  
+- execution plan  
+- tasks  
+- procedures  
+- tool specs  
+
+---
+
+## 🧩 19.2 Procedure Compiler  
+Transforms **tasks → ordered procedures**.
+
+### Pipeline  
+1. **TaskDependencyResolver**  
+2. **TaskSequencer**  
+3. **ProcedureConstructor**  
+4. **ProcedureValidator**
+
+### Outputs  
+- procedure object  
+- preconditions  
+- postconditions  
+- error handling  
+
+---
+
+## 🧩 19.3 Tool Specification Compiler  
+Transforms **procedures → tool requirements**.
+
+### Pipeline  
+1. **ToolRequirementExtractor**  
+2. **ToolMatcher**  
+3. **ToolSpecConstructor**
+
+### Outputs  
+- tool specs  
+- integration points  
+
+---
+
+## 🧩 19.4 Task Compiler  
+Transforms **sub‑goals → atomic tasks**.
+
+### Pipeline  
+1. **TaskTemplateSelector**  
+2. **TaskConstructor**  
+3. **TaskValidator**
+
+### Outputs  
+- atomic tasks  
+- task dependencies  
+- validation rules  
