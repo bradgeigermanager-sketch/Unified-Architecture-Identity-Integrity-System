@@ -1,0 +1,51 @@
+Full Feedback Loop Rules  
+The feedback loop makes the system adaptive.
+
+---
+
+## 🧩 21.1 Feedback Collection Rules  
+Collect:
+
+- task results  
+- procedure outcomes  
+- verification reports  
+- consistency reports  
+- anomaly deltas  
+- expected‑record deltas  
+- provenance deltas  
+
+---
+
+## 🧩 21.2 Feedback Analysis Rules  
+Analyze:
+
+- planned vs. actual  
+- expected vs. observed  
+- anomalies vs. features  
+- tools vs. outputs  
+- procedures vs. results  
+
+---
+
+## 🧩 21.3 Update Generation Rules  
+Generate:
+
+- goal updates  
+- new goals  
+- procedure updates  
+- tool updates  
+- model updates  
+- follow‑up tasks  
+
+---
+
+## 🧩 21.4 Update Application Rules  
+Apply updates to:
+
+- identity graph  
+- domain schemas  
+- expected‑record models  
+- anomaly models  
+- continuity rules  
+- tool registry  
+- procedure library  
