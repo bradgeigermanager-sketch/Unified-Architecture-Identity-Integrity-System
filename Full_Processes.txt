@@ -1,0 +1,52 @@
+17. Full Processes  
+Each procedure has a corresponding process definition.
+
+---
+
+## 🧩 17.1 Example: Residence Consistency Process  
+### Preconditions  
+- Identity has residence claim  
+- Domain schemas loaded  
+- Tools available  
+
+### Steps  
+1. Retrieve property records  
+2. Retrieve utility records  
+3. Retrieve communications billing  
+4. Normalize all records  
+5. Align address fields  
+6. Align date fields  
+7. Detect mismatches  
+8. Reconcile mismatches  
+9. Update graph  
+10. Update provenance  
+
+### Postconditions  
+- Residence domain consistent  
+- Missing records filled  
+- Provenance updated  
+
+### Error Handling  
+- Missing domain records  
+- Conflicting timestamps  
+- Invalid provenance  
+
+### Tools  
+- Property normalizer  
+- Utility normalizer  
+- Communications normalizer  
+- Reconciliation tool  
+- Provenance updater  
+
+---
+
+## 🧩 17.2 Example: Monthly Continuity Audit Process  
+### Steps  
+1. Retrieve continuity markers  
+2. Retrieve domain records  
+3. Validate renewal cycles  
+4. Validate periodic filings  
+5. Detect missing markers  
+6. Generate continuity tasks  
+7. Update graph  
+8. Update provenance  
