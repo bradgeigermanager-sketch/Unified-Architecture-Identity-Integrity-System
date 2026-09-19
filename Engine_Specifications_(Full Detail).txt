@@ -1,0 +1,167 @@
+# ⭐ **13. Engine Specifications (Full Detail)**  
+This section expands each engine into its full operational definition.
+
+---
+
+## 🧩 13.1 Expected‑Record Inference Engine  
+### Inputs  
+- identity attributes  
+- domain rules  
+- population norms  
+- lifecycle stage  
+- cross‑domain correlations  
+
+### Outputs  
+- expected records  
+- missing expected records  
+- expected record explanations  
+
+### Internal Modules  
+- ExpectedRecordClassifier  
+- ExpectedRecordGenerator  
+- ExpectedRecordComparator  
+
+---
+
+## 🧩 13.2 Anomaly Engine  
+### Inputs  
+- records  
+- expected records  
+- identity graph  
+- domain schemas  
+
+### Outputs  
+- anomaly objects  
+- anomaly severity scores  
+- anomaly explanations  
+
+### Internal Modules  
+- FeatureExtractor  
+- AnomalyClassifier  
+- SeverityScorer  
+- ExplanationGenerator  
+
+---
+
+## 🧩 13.3 Provenance Engine  
+### Functions  
+- provenance refresh  
+- multi‑source merge  
+- reliability scoring  
+- timestamp validation  
+
+### Modules  
+- ProvenanceCollector  
+- ProvenanceValidator  
+- ProvenanceMerger  
+- ProvenanceUpdater  
+
+---
+
+## 🧩 13.4 Continuity Engine  
+### Functions  
+- renewal validation  
+- periodic filings  
+- lifecycle marker generation  
+
+### Modules  
+- ContinuityRulesLoader  
+- ContinuityMarkerGenerator  
+- ContinuityGapDetector  
+
+---
+
+## 🧩 13.5 Record Collection Engine  
+### Functions  
+- domain collection  
+- normalization  
+- validation  
+- provenance attachment  
+- unified record assembly  
+
+### Modules  
+- DomainCollectors  
+- RecordNormalizer  
+- RecordValidator  
+- ProvenanceAttacher  
+- RecordAssembler  
+
+---
+
+## 🧩 13.6 List Determination Engine  
+### Functions  
+- list rule loading  
+- record classification  
+- list building  
+- follow‑up task generation  
+
+### Modules  
+- ListRulesLoader  
+- RecordClassifier  
+- ListBuilder  
+- FollowUpTaskGenerator  
+
+---
+
+## 🧩 13.7 Goal‑to‑Execution Compiler  
+### Pipeline  
+1. Interpret goal  
+2. Generate sub‑goals  
+3. Generate tasks  
+4. Build procedures  
+5. Generate tool specs  
+6. Produce execution plan  
+
+### Modules  
+- GoalInterpreter  
+- SubGoalGenerator  
+- TaskGenerator  
+- ProcedureBuilder  
+- ToolSpecGenerator  
+
+---
+
+## 🧩 13.8 Cross‑Layer Consistency Engine  
+### Layers  
+- identity graph  
+- records  
+- expected records  
+- anomalies  
+- LLM reasoning  
+- tasks/procedures/tools  
+- execution results  
+
+### Modules  
+- SnapshotCollector  
+- LayerValidators  
+- ReportAggregator  
+- CorrectionGenerator  
+
+---
+
+## 🧩 13.9 Execution Feedback Loop  
+### Functions  
+- collect execution results  
+- analyze discrepancies  
+- generate updates  
+- apply updates  
+
+### Modules  
+- FeedbackCollector  
+- FeedbackAnalyzer  
+- UpdateGenerator  
+- UpdateApplier  
+
+---
+
+## 🧩 13.10 Toolchain Optimization Layer  
+### Functions  
+- merge redundant tools  
+- identify missing tools  
+- detect inefficiencies  
+- propose generalizations  
+
+### Modules  
+- ToolUsageAnalyzer  
+- ToolRedundancyDetector  
+- ToolGeneralizationEngine  
